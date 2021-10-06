@@ -1,0 +1,389 @@
+header{
+    /* position: fixed; */
+    z-index: 100;
+    margin: 12px;
+  }
+.title{
+    font-size: 100%;
+    background-color: white;
+    
+    
+}
+.progress {
+    
+    /* position: fixed; */
+    /* float: left; */
+    opacity:1;
+    z-index: 100;
+
+    
+    
+    background: white;
+   
+    width: 240px;
+    border: 1px solid black;
+    height: 10px;
+  }
+  
+  .progress .progress__bar {
+    height: 100%;
+    width: 0%;
+    background-color: red;
+    animation: fill-bar 5s forwards;
+  }
+  
+
+
+  .main{
+    margin: 0 auto;
+    margin-bottom: 56px;
+    width:85%;
+
+  }
+  .imgwrap {
+    position: relative;
+    width: 100px;
+    display: inline-flex;
+    margin-top: 6%;
+margin-left: 6%;
+  }
+  
+  .image {
+    /* display: flex; */
+    width: 100px;
+    margin: 0;
+   
+  }
+  
+  .overlay {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 98px;
+    width: 98px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: white;
+    border: 1px solid black;
+  }
+  
+  .imgwrap:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    font-size: 12px;
+    position: absolute;
+    width: 80px;
+    top: 50%;
+    left: 50%;
+    margin-top: 5px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  #two{
+    display: none;
+}
+
+#three{
+  display: none;
+}
+
+#four{
+  display: none;
+}
+
+@media screen and (max-width : 1200px) {
+    #one{
+        display: none;
+    }
+    #two{
+        display: block
+        ;
+        /* margin-top: 12px; */
+    }
+    #two img{
+      filter: saturate(100%)
+    }
+
+    
+
+
+}
+
+
+@media screen and (max-width : 800px) {
+  #one{
+      display: none;
+  }
+  #two{
+      display:none;
+      ;
+  }
+  #three{
+    display: block;
+    /* margin-top: 48px; */
+  }
+  #three img{
+    filter: saturate(20%)
+  }
+
+  
+
+}
+
+@media screen and (max-width : 550px) {
+  #one{
+      display: none;
+  }
+  #two{
+      display:none;
+      ;
+  }
+  #three{
+    display:none;
+  }
+
+  #four{
+    display: block;
+    /* margin-top: 56px; */
+  }
+  #four img{
+    filter: saturate(0%)
+  }
+}
+  @media screen and (max-width : 300px) {
+    #one{
+        display: none;
+    }
+    #two{
+        display:none;
+        ;
+    }
+    #three{
+      display:none;
+    }
+  
+    #four{
+      display: block;
+      /* margin-top: 56px; */
+    }
+    #four img{
+      width: 80%;
+    }
+
+ 
+}
+@keyframes fill-bar {
+    from {width: 0%;}
+    to {width: 0%;}
+  }
+
+  @media screen and (max-width : 1600px) {
+   
+    @keyframes fill-bar {
+    from {width: 0%;}
+    to {width: 5%;}
+  }
+}
+  @media screen and (max-width : 1550px) {
+   
+    @keyframes fill-bar {
+    from {width: 0%;}
+    to {width: 10%;}
+  }
+ 
+  }
+  @media screen and (max-width : 1500px) {
+   
+    @keyframes fill-bar {
+    from {width: 0%;}
+    to {width: 15%;}
+  }
+  
+  }
+  @media screen and (max-width : 1450px) {
+   
+    @keyframes fill-bar {
+    from {width: 0%;}
+    to {width: 20%;}
+  }
+ 
+  }
+
+
+
+  @media screen and (max-width : 1400px) {
+   
+    @keyframes fill-bar {
+    from {width: 0%;}
+    to {width: 25%;}
+  }
+  
+  }
+
+  @media screen and (max-width : 1350px) {
+      
+    @keyframes fill-bar {
+    from {width: 0%;}
+    to {width: 30%;}
+  }
+
+  }
+
+  @media screen and (max-width : 1300px) {
+  
+    @keyframes fill-bar {
+    from {width: 0%;}
+    to {width: 35%;}
+  }
+
+  
+  }
+
+  @media screen and (max-width : 1250px) {
+    @keyframes fill-bar {
+    from {width: 0%;}
+    to {width: 40%;}
+  }
+ 
+  }
+  @media screen and (max-width : 1200px) {
+    @keyframes fill-bar {
+    from {width: 0%;}
+    to {width: 45%;}
+  }
+  
+  }
+  @media screen and (max-width : 1150px) {
+    @keyframes fill-bar {
+    from {width: 0%;}
+    to {width: 50%;}
+  }
+  @media screen and (max-width : 1100px) {
+    @keyframes fill-bar {
+    from {width: 0%;}
+    to {width: 55%;}
+  }
+  
+  }
+
+  @media screen and (max-width : 1050px) {
+    @keyframes fill-bar {
+    from {width: 0%;}
+    to {width: 60%;}
+  }
+  
+  }
+
+
+
+  @media screen and (max-width : 1000px) {
+    @keyframes fill-bar {
+    from {width: 0%;}
+    to {width: 65%;}
+  }
+  .imgwrap{
+   
+
+    margin-top: 5%;
+    margin-left: 5%;}
+}
+
+@media screen and (max-width : 950px) {
+    @keyframes fill-bar {
+    from {width: 0%;}
+    to {width: 70%;}
+  }
+}
+
+@media screen and (max-width : 900px) {
+    @keyframes fill-bar {
+    from {width: 0%;}
+    to {width: 75%;}
+  }
+}
+
+@media screen and (max-width : 850px) {
+    @keyframes fill-bar {
+    from {width: 0%;}
+    to {width: 80%;}
+  }
+}
+
+@media screen and (max-width : 810px) {
+    @keyframes fill-bar {
+    from {width: 0%;}
+    to {width: 85%;}
+  }
+  .imgwrap{
+   
+
+    margin-top: 3%;
+    margin-left: 3%;}
+}
+
+@media screen and (max-width : 750px) {
+    @keyframes fill-bar {
+    from {width: 0%;}
+    to {width: 85%;}
+  }
+}
+
+@media screen and (max-width : 700px) {
+    @keyframes fill-bar {
+    from {width: 0%;}
+    to {width: 90%;}
+  }
+}
+
+@media screen and (max-width : 650px) {
+    @keyframes fill-bar {
+    from {width: 0%;}
+    to {width: 95%;}
+  }
+  .imgwrap{
+   
+
+    margin-top: 2%;
+    margin-left: 2%;}
+
+
+}
+
+@media screen and (max-width : 600px) {
+  @keyframes fill-bar {
+  from {width: 0%;}
+  to {width: 98%;}
+  
+}
+.imgwrap{
+ 
+
+  margin-top: 1%;
+  margin-left: 1%;}
+}
+
+
+@media screen and (max-width : 540px) {
+    @keyframes fill-bar {
+    from {width: 0%;}
+    to {width: 100%;}
+    
+  }
+  .imgwrap{
+   
+
+    margin-top: 0%;
+    margin-left: 0%;}
+}
+
+
+}
